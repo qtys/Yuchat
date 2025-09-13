@@ -1,0 +1,10 @@
+sk-avvbqtfxcnomhmeadiyjskgnszhstuzsduehehsjjwlodbpr     第一行为硅基流动密钥
+google/gemma-2-27b-it                                                     第二行为模型名称
+data.txt                                                                               第三行为存档文件名称
+c8895a16                                                                            第四行为讯飞开发平台APPID
+NzMyZjs2ZGFiMTQyZTAyYmU1MjZiYWU0                           第五行为讯飞开发平台APISecret
+8624f954e3f71900216e57aa29a73837                                 第六行为讯飞开发平台APIKey
+
+
+
+本文件为示例，上面密钥皆无法使用
