@@ -1,0 +1,41 @@
+{
+    "openai": {
+        "api_key": "",
+        "base_url": "https://api.yuegle.com/v1",
+        "model": "gpt-4.1"
+    },
+    "baidu_tts": {
+        "api_key": "",
+        "secret_key": ""
+    },
+    "app": {
+        "data_file": "chat_data.json",
+        "max_history": 50,
+        "available_models": [
+            "gemini-2.5-pro",
+            "gemini-2.5-flash",
+            "gpt-4.1",
+            "deepseek-v3",
+            "deepseek-r1"
+        ],
+        "background_image": "image3.png",
+        "characters": [
+            {
+                "name": "AI",
+                "data_file": "chat_history_AI.json",
+                "description": "默认AI助手"
+            },
+            {
+                "name": "11",
+                "data_file": "chat_history_11.json",
+                "description": "11"
+            },
+            {
+                "name": "小磊",
+                "data_file": "chat_history_小磊.json",
+                "description": "从chat_history_小磊.json自动加载的角色"
+            }
+        ],
+        "current_character": "AI"
+    }
+}
