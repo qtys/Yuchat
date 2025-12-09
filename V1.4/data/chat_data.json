@@ -1,0 +1,34 @@
+[
+  {
+    "role": "C:\\Users\\27927\\AppData\\Local\\Temp\\character_test_zf9wum4t\\chat_history_角色1.json",
+    "content": {
+      "role": "user",
+      "content": "你好，我是角色1的用户"
+    },
+    "timestamp": "2025-11-30T10:35:12.960797"
+  },
+  {
+    "role": "C:\\Users\\27927\\AppData\\Local\\Temp\\character_test_zf9wum4t\\chat_history_角色1.json",
+    "content": {
+      "role": "assistant",
+      "content": "你好！我是角色1的助手"
+    },
+    "timestamp": "2025-11-30T10:35:12.962796"
+  },
+  {
+    "role": "C:\\Users\\27927\\AppData\\Local\\Temp\\character_test_zf9wum4t\\chat_history_角色2.json",
+    "content": {
+      "role": "user",
+      "content": "嗨，我是角色2的用户"
+    },
+    "timestamp": "2025-11-30T10:35:12.963793"
+  },
+  {
+    "role": "C:\\Users\\27927\\AppData\\Local\\Temp\\character_test_zf9wum4t\\chat_history_角色2.json",
+    "content": {
+      "role": "assistant",
+      "content": "嗨！我是角色2的助手"
+    },
+    "timestamp": "2025-11-30T10:35:12.963793"
+  }
+]

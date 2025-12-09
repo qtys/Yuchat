@@ -1,0 +1,51 @@
+{
+    "openai": {
+        "api_key": "",
+        "base_url": "https://api.yuegle.com/v1",
+        "model": "gemini-2.5-flash"
+    },
+    "baidu_tts": {
+        "api_key": "",
+        "secret_key": ""
+    },
+    "app": {
+        "data_file": "data/chat_data.json",
+        "context_length": 50,
+        "available_models": [
+            "gemini-2.5-pro",
+            "gemini-2.5-flash",
+            "gpt-4.1",
+            "deepseek-v3",
+            "deepseek-r1"
+        ],
+        "background_image": "image/image1.png",
+        "characters": [
+            {
+                "name": "AI",
+                "data_file": "data/chat_history_AI.json",
+                "description": "默认AI助手"
+            },
+            {
+                "name": "11",
+                "data_file": "data/chat_history_11.json",
+                "description": "自定义角色: 11",
+                "icon": "account-circle-outline"
+            }
+        ],
+        "current_character": "11"
+    },
+    "metadata": {
+        "version": "1.0",
+        "created_at": "2025-11-21 15:57:42",
+        "last_updated": "2025-11-30 20:29:20",
+        "description": "YU-Chat配置文件",
+        "author": "YU-Chat System"
+    },
+    "theme": {
+        "theme_index": 2,
+        "theme_style": "Light",
+        "primary_palette": "Green",
+        "accent_palette": "LightGreen",
+        "current_theme_index": 3
+    }
+}

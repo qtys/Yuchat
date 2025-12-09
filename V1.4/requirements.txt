@@ -1,0 +1,40 @@
+# YuChat - 环境依赖 (Python 3.9 兼容版本)
+# 运行命令：pip install -r requirements.txt
+
+# GUI框架 - Kivy和KivyMD (Python 3.9 稳定版本)
+kivy==2.3.1
+https://github.com/kivymd/KivyMD/archive/master.zip
+
+# Material You颜色主题支持
+materialyoucolor
+
+# 图像处理库
+Pillow
+
+# OpenAI API客户端 (Python 3.9 兼容版本)
+openai
+
+# 网络请求库
+requests
+
+# Android 支持库
+pyjnius
+Cython
+# Android support libraries
+android
+kivy-garden
+
+# 异步支持（可选，用于高级功能）
+# asynckivy>=0.6.0
+
+# 假数据生成（可选，仅示例需要）
+# faker>=15.0.0
+
+# 打包工具（可选，仅打包时需要）
+# pyinstaller>=5.0.0
+
+# 安卓权限管理（可选，仅安卓打包时需要）
+# android-permissions>=0.1.0
+
+# tkinter为Python标准库，无需单独安装
+# 但需确保Python安装时包含tkinter模块
