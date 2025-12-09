@@ -1,0 +1,139 @@
+📖 使用说明
+1. 环境要求
+系统要求：
+
+Windows 7/10/11 (推荐) 或 macOS / Linux
+
+Python 3.7 或更高版本
+
+Python 依赖：
+
+bash
+pip install tkinter pillow openai requests pygame
+2. 文件结构
+text
+YU-Chat/
+├── config/
+│   └── config.json          # 配置文件
+├── data/
+│   └── chat_data.json       # 聊天历史数据
+├── image/
+│   ├── lightball.ico        # 程序图标
+│   └── background.jpg       # 背景图片（可选）
+├── voice/
+│   └── response.mp3         # 语音文件
+├── TTS/
+│   └── BD_toapivoice.py     # 百度语音合成模块
+└── run_api.py              # 主程序
+3. 配置说明
+编辑 config/config.json 文件：
+
+json
+{
+    "openai": {
+        "api_key": "您的API密钥",
+        "base_url": "https://api.yuegle.com/v1",
+        "model": "gemini-2.5-pro"
+    },
+    "baidu_tts": {
+        "api_key": "您的百度TTS API Key",
+        "secret_key": "您的百度TTS Secret Key"
+    },
+    "app": {
+        "data_file": "chat_data.json",
+        "max_history": 50,
+        "available_models": ["gemini-2.5-pro", "gpt-4", "gpt-3.5-turbo"],
+        "background_image": "background.jpg"
+    }
+}
+配置项说明：
+
+openai.api_key: AI服务的API密钥
+
+openai.model: 默认使用的AI模型
+
+baidu_tts.api_key & baidu_tts.secret_key: 百度语音合成服务密钥
+
+app.available_models: 可切换的模型列表
+
+app.background_image: 背景图片文件名（放在image文件夹中）
+
+4. 功能使用
+🗣️ 基本聊天
+在底部输入框输入问题
+
+点击"发送"按钮或按 Enter 键
+
+AI 回答将显示在聊天区域
+
+🔊 语音播报
+勾选"🔊 语音播报"复选框
+
+AI 回答将自动转换为语音播放
+
+需要正确配置百度 TTS API 密钥
+
+🔄 切换模型
+点击"🔄 切换模型"按钮
+
+程序将在配置的模型列表中循环切换
+
+当前模型显示在按钮上
+
+💾 历史记录
+聊天记录自动保存到 data/chat_data.json
+
+程序启动时自动加载历史记录
+
+点击"🗑️ 清空"按钮可清除历史记录
+
+🎨 个性化设置
+更换背景图片：
+
+将图片放入 image 文件夹
+
+在配置文件中设置 background_image 为图片文件名
+
+调整窗口透明度：
+
+修改代码中的 window.attributes("-alpha", 0.97)
+
+值范围：0.0（完全透明）到 1.0（完全不透明）
+
+5. 故障排除
+❌ API 连接问题
+检查 config.json 中的 API 密钥是否正确
+
+确认网络连接正常
+
+如遇模型不可用错误，尝试切换其他模型
+
+❌ 语音播放问题
+确认百度 TTS API 密钥和 Secret Key 正确配置
+
+检查网络连接，确保能访问百度 API
+
+确认已安装 pygame 库：pip install pygame
+
+❌ 界面显示问题
+如背景图片加载失败，程序将使用默认背景色
+
+确保图片文件存在于 image 文件夹中
+
+支持的图片格式：JPG、PNG、BMP 等
+
+❌ 程序启动失败
+确认所有依赖库已正确安装
+
+检查配置文件格式是否正确（有效的 JSON）
+
+查看终端输出的错误信息进行诊断
+
+6. 快捷键
+Enter: 发送消息
+
+点击"⚙️ 配置": 打开配置文件
+
+点击"🔄 切换模型": 切换 AI 模型
+
+点击"🗑️ 清空": 清除聊天历史

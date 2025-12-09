@@ -1,0 +1,17 @@
+# YuChat - 环境依赖
+# 运行命令：pip install -r requirements.txt
+
+# 图像处理库
+Pillow>=9.0.0
+
+# OpenAI API客户端
+openai>=1.0.0
+
+# 网络请求库
+requests>=2.31.0
+
+# 语音播放库
+pygame>=2.5.0
+
+# tkinter为Python标准库，无需单独安装
+# 但需确保Python安装时包含tkinter模块
